@@ -32,6 +32,7 @@ const AppProvider = ({ children }) => {
       const cart = await response.json();
       dispatch({type:"DISPLAY_ITEMS",payload:cart})
     }
+
     useEffect(()=>{
         fetchData();
     },[])
